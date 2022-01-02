@@ -1,0 +1,238 @@
+1). For the given JSON iterate over all for loops (for, for in, for of, forEach)
+
+ (a).  FOR IN LOOP
+
+let data =[
+    {
+        "name":"manoj",
+        "age":50,
+        "city":"ramanagar"
+    },
+    {
+        "name":"balgeri",
+        "age":27,
+        "city":"hyderabad"
+    },
+    {
+        'name':"sanjay",
+        "age":22,
+        "city":"vijayawad"
+    },
+    {
+        'name':"akshay",
+        "age":30,
+        "city":"dharwad"        
+    }
+]
+
+for(var i in data){
+    console.log(data[i])
+}
+
+
+output
+{name: 'manoj', age: 50, city: 'ramanagar'}age: 50city: "ramanagar"name: "manoj"[[Prototype]]: Object
+{name: 'balgeri', age: 27, city: 'hyderabad'}age: 27city: "hyderabad"name: "balgeri"[[Prototype]]: Object
+{name: 'sanjay', age: 22, city: 'vijayawad'}age: 22city: "vijayawad"name: "sanjay"[[Prototype]]: Object
+{name: 'akshay', age: 30, city: 'dharwad'}age: 30city: "dharwad"name: "akshay"[[Prototype]]: Object
+
+
+
+
+(b).  foreach loop
+
+
+let data =[
+    {
+        "name":"manoj",
+        "age":50,
+        "city":"ramanagar"
+    },
+    {
+        "name":"balgeri",
+        "age":27,
+        "city":"hyderabad"
+    },
+    {
+        'name':"sanjay",
+        "age":22,
+        "city":"vijayawad"
+    },
+    {
+        'name':"akshay",
+        "age":30,
+        "city":"dharwad"        
+    }
+]
+data.forEach(element => {
+    console.log(element)
+})
+
+
+output
+
+{name: 'manoj', age: 50, city: 'ramanagar'}age: 50city: "ramanagar"name: "manoj"[[Prototype]]: Object
+dinesh.js:24 {name: 'balgeri', age: 27, city: 'hyderabad'}age: 27city: "hyderabad"name: "balgeri"[[Prototype]]: Object
+dinesh.js:24 {name: 'sanjay', age: 22, city: 'vijayawad'}age: 22city: "vijayawad"name: "sanjay"[[Prototype]]: Object
+dinesh.js:24 
+
+
+
+
+ (c).  for of loop
+
+
+let data =[
+    {
+        "name":"manoj",
+        "age":50,
+        "city":"ramanagar"
+    },
+    {
+        "name":"balgeri",
+        "age":27,
+        "city":"hyderabad"
+    },
+    {
+        'name':"sanjay",
+        "age":22,
+        "city":"vijayawad"
+    },
+    {
+        'name':"akshay",
+        "age":30,
+        "city":"dharwad"        
+    }
+]
+for(let i of data){
+    console.log(i)
+}
+
+
+output
+
+{name: 'manoj', age: 50, city: 'ramanagar'}age: 50city: "ramanagar"name: "manoj"[[Prototype]]: Object
+dinesh.js:24 {name: 'balgeri', age: 27, city: 'hyderabad'}age: 27city: "hyderabad"name: "balgeri"[[Prototype]]: Object
+dinesh.js:24 {name: 'sanjay', age: 22, city: 'vijayawad'}age: 22city: "vijayawad"name: "sanjay"[[Prototype]]: Object
+dinesh.js:24 
+
+
+
+(D).  for loop
+
+
+let data =[
+    {
+        "name":"manoj",
+        "age":50,
+        "city":"ramanagar"
+    },
+    {
+        "name":"balgeri",
+        "age":27,
+        "city":"hyderabad"
+    },
+    {
+        'name':"sanjay",
+        "age":22,
+        "city":"vijayawad"
+    },
+    {
+        'name':"akshay",
+        "age":30,
+        "city":"dharwad"        
+    }
+]
+for(let i=0;i<data.length;i++){
+    console.log(data[i])
+}
+
+
+output
+
+{name: 'manoj', age: 50, city: 'ramanagar'}age: 50city: "ramanagar"name: "manoj"[[Prototype]]: Object
+dinesh.js:24 {name: 'balgeri', age: 27, city: 'hyderabad'}age: 27city: "hyderabad"name: "balgeri"[[Prototype]]: Object
+dinesh.js:24 {name: 'sanjay', age: 22, city: 'vijayawad'}age: 22city: "vijayawad"name: "sanjay"[[Prototype]]: Object
+dinesh.js:24 
+
+
+2). Create your own resume data in JSON format
+
+
+let resume = [
+    {
+        "name":"manoj l",
+        "age":27,
+        "address":"vijayawada",
+        "qualification":"BE civil engineering",
+        "percentage":"9.5 CGPA",
+        "universities":{
+            "school":"tagore international school",
+            "PU":"sheshadri puc college",
+            "degree college":"BNMIT college of engineering"
+        },
+        "hobbies":"reading, watching films etc"
+    },
+    {
+        "name":"rahul",
+        "age":37,
+        "address":"hyderabad",
+        "qualification":"BE computer science engineering",
+        "percentage":"8.9 CGPA",
+        "universities":{
+            "school":"meridian primary public school",
+            "PU":"narayana pu  college",
+            "degree college":"PESIT college of engineering"
+        },
+        "HOBBIES":"reading, exploring new things"
+    },
+    {
+        "name":"sanjay",
+        "age":34,
+        "address":"delhi",
+        "qualification":"BE information science engineering",
+        "percentage":"9.0 CGPA",
+        "universities":{
+            "school":"national public english school",
+            "PU":"sentmichael pu college",
+            "degree college":"bms college of engineering"
+        },
+        "hobbies":"reading, swimming "
+    }
+]
+
+for(let i=0;i<resume.length;i++){
+    console.log(resume[i])
+}
+
+
+output
+{name: 'manoj l', age: 27, address: 'vijayawada', qualification: 'BE civil engineering', percentage: '9.5 CGPA', …}
+address: "vijayawada"
+age: 27
+hobbies: "reading, watching films etc"
+name: "manoj l"
+percentage: "9.5 CGPA"
+qualification: "BE civil engineering"
+universities: {school: 'tagore international school', PU: 'sheshadri puc college', degree college: 'BNMIT college of engineering'}
+[[Prototype]]: Object
+
+{name: 'rahul', age: 37, address: 'hyderabad', qualification: 'BE computer science engineering', percentage: '8.9 CGPA', …}
+HOBBIES: "reading, exploring new things"
+address: "hyderabad"
+age: 37
+name: "rahul"
+percentage: "8.9 CGPA"
+qualification: "BE computer science engineering"
+universities: {school: 'meridian primary public school', PU: 'narayana pu  college', degree college: 'PESIT college of engineering'}
+[[Prototype]]: Object
+
+{name: 'sanjay', age: 34, address: 'delhi', qualification: 'BE information science engineering', percentage: '9.0 CGPA', …}
+address: "delhi"
+age: 34
+hobbies: "reading, swimming "
+name: "sanjay"
+percentage: "9.0 CGPA"
+qualification: "BE information science engineering"
+universities: {school: 'national public english school', PU: 'sentmichael pu college', degree college: 'bms college of engineering'}
+[[Prototype]]: Object
